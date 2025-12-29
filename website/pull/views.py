@@ -1,18 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def project1(request):
-    return HttpResponse("Hello! This is my first app")
-
-def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
-
-
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % question_id)
-
-
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
-# Create your views here.
+def index(request):
+    return HttpResponse("This is home page. I'm here")
+def about(request):
+    return HttpResponse("This is about page")
+def contact(request):
+    return HttpResponse("This is contact page")

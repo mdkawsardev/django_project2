@@ -1,11 +1,8 @@
 from django.urls import path
-from . import views
+from pull import views
 
 urlpatterns = [
-    path('project1/', views.project1, name='project1'),
-    path("<int:question_id>/", views.detail, name="detail"),
-    # ex: /polls/5/results/
-    path("<int:question_id>/results/", views.results, name="results"),
-    # ex: /polls/5/vote/
-    path("<int:question_id>/vote/", views.vote, name="vote"),
+    path('', views.index, name='home'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
 ]
