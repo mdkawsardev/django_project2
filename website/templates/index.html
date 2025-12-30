@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Template</title>
-</head>
-<body>
-    <h1>Hello Dear</h1>
-    <p>Hello <b>{{bold}}</b></p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<h1>This is home page</h1>
+{% endblock body %}
