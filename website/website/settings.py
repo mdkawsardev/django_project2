@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'pull.apps.PullConfig',
+    'pull.apps.PullConfig', #? I added this path
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

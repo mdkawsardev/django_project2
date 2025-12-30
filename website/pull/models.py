@@ -1,11 +1,9 @@
 from django.db import models
 
 # Create your models here.
-class questions(models.Model):
-    question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('Date published')
-
-class choice(models.Model):
-    question = models.ForeignKey(questions, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
+class Contact(models.Model): #? I created a model named Contact
+    name = models.CharField(max_length=200)
+    email = models.EmailField(max_length=50)
+    phone = models.CharField(max_length=11)
+    desc = models.TextField()
+    date = models.DateField()
